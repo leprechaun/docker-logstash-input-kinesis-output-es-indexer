@@ -14,5 +14,6 @@ filter {
 output {
 	elasticsearch {
 		hosts => ["${ELASTICSEARCH_ENDPOINT}"]
+		ssl => true
 	}
 }
